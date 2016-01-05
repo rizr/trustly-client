@@ -28,14 +28,13 @@
     tClientKP.init(function(){
         tClientKP.deposit({
             NotificationURL: 'http://127.0.0.1:4343/notification',
-            EndUserID: 'john.doe@example.com',
+            EndUserID: 'xxx@example.com',
             MessageID: '111112111221',
             Locale: 'es_ES',
             Amount: '1.00',
             Currency: 'EUR',
             SuccessURL: 'http://127.0.0.1:4343/success',
-            FailURL: 'http://127.0.0.1:4343/fail',
-            HoldNotifications: 1
+            FailURL: 'http://127.0.0.1:4343/fail'
         },function(err, response){
             if (err){
                 console.log(util.inspect(err, false, 20, true));
@@ -84,4 +83,4 @@ If *trustlyError* is filled, it will catch all information about the trustly err
 More information about the errors [here (trustly docs)](https://trustly.com/en/developer/api#/errormessages)
 
 ## License
-Licensed under the MIT license. 2015
+Licensed under the MIT license. 2016
